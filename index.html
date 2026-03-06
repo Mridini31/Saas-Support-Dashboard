@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaS Support Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>SaaS Customer Support Ticket Dashboard</h1>
+    <p id="ticketCount"></p>
+    <div class="filters">
+
+  <input type="text" id="searchInput" placeholder="Search customer...">
+
+  <select id="statusFilter">
+    <option value="All">All Status</option>
+    <option value="Open">Open</option>
+    <option value="Pending">Pending</option>
+    <option value="Resolved">Resolved</option>
+  </select>
+
+  <select id="priorityFilter">
+    <option value="All">All Priority</option>
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+
+</div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ticket ID</th>
+          <th>Customer</th>
+          <th>Issue Type</th>
+          <th>Priority</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody id="ticketTable">
+        <!-- Tickets will appear here -->
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
